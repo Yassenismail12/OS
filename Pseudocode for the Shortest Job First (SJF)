@@ -1,0 +1,11 @@
+1. Sort the list of processes based on their burst time in ascending order.
+2. Set the current_time variable to 0.
+3. Initialize an empty list called completed_processes.
+4. While there are still processes in the list:
+     a. Find the process with the shortest burst time that has arrived (burst time > 0).
+     b. Add the process to the completed_processes list.
+     c. Update the current_time by adding the burst time of the completed process.
+     d. Decrease the burst time of all other processes in the list by the burst time of the completed process.
+5. Calculate the waiting time and turnaround time for each process in the completed_processes list.
+6. Calculate the average waiting time and average turnaround time for all processes.
+
