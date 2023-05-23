@@ -1,0 +1,17 @@
+1. Create a list of processes with their arrival time, burst time, and priority.
+2. Sort the list of processes based on their priority (higher priority value indicates higher priority).
+3. Set the current_time variable to 0.
+4. Create an empty ready_queue and completed_processes list.
+5. While there are processes in the list or ready_queue is not empty:
+     a. Remove processes from the list whose arrival time is less than or equal to the current_time and add them to the ready_queue.
+     b. If the ready_queue is empty, increment the current_time by 1 and continue to the next iteration.
+     c. Sort the ready_queue based on priority (higher priority first).
+     d. Get the process with the highest priority from the ready_queue.
+     e. Execute the process for its burst time.
+     f. Decrement the burst time of the executed process by the time it was executed.
+     g. If the process still has burst time remaining, add it back to the ready_queue.
+     h. If the process has completed (burst time becomes 0), add it to the completed_processes list.
+     i. Increment the current_time by the burst time of the executed process.
+6. Calculate waiting time for each completed process using the formula: waiting time = completion time - burst time - arrival time.
+7. Calculate average waiting time by summing up the waiting times of all completed processes and dividing by the total number of processes.
+8. Display the completed_processes list and average waiting time.
