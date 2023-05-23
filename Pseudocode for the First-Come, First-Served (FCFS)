@@ -1,0 +1,18 @@
+1. Initialize an empty queue to hold the processes.
+
+2. For each process in the list of processes:
+     a. Add the process to the queue.
+
+3. Set the current_time variable to 0.
+
+4. While the queue is not empty:
+     a. Dequeue the next process from the front of the queue.
+     b. Set the start_time of the process to max(current_time, arrival_time).
+     c. Update the current_time to the sum of start_time and burst_time.
+     d. Set the completion_time and turnaround_time of the process.
+     e. Calculate the waiting_time of the process as turnaround_time - burst_time.
+
+5. Calculate the average waiting_time, turnaround_time, and completion_time.
+
+6. Print the scheduling results.
+
