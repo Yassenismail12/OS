@@ -1,0 +1,9 @@
+1. Create a queue to hold the processes.
+2. Initialize a time quantum (time_slice).
+3. While the queue is not empty:
+     a. Dequeue the next process from the front of the queue.
+     b. Execute the process for the time quantum (time_slice).
+     c. If the process completes, print its completion time and remove it from the queue.
+     d. If the process does not complete within the time quantum:
+          - Print the time quantum expired for the process.
+          - Enqueue the process back to the end of the queue.
