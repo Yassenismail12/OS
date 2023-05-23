@@ -1,0 +1,8 @@
+1. Create multiple queues, each representing a different priority level.
+2. Initialize an empty list to store the processes.
+3. Repeat the following steps until all processes are executed:
+     a. Check if any new process has arrived. If yes, assign it to the appropriate queue based on its priority.
+     b. If the highest priority queue is not empty, execute the process at the front of that queue.
+     c. If the process completes its execution, remove it from the queue.
+     d. If the process does not complete within its time quantum, move it to the next lower priority queue.
+     e. If all queues are empty, go to step a.
